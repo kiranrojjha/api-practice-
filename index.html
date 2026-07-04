@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Civic Issues</title>
+
+<style>
+
+body{
+    font-family: Arial, sans-serif;
+    background:#f4f4f4;
+    margin:20px;
+}
+
+h1{
+    text-align:center;
+}
+
+.controls{
+    text-align:center;
+    margin-bottom:20px;
+}
+
+input{
+    padding:10px;
+    width:250px;
+}
+
+button{
+    padding:10px 15px;
+    margin:5px;
+    cursor:pointer;
+}
+
+#issues{
+    display: flex;
+    grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+    gap:20px;
+}
+
+.card{
+    background:white;
+    padding:15px;
+    border-radius:10px;
+    box-shadow:0 0 10px rgba(0,0,0,.1);
+}
+
+</style>
+
+</head>
+
+<body>
+
+<h1>🚧 Civic Issue Reporting</h1>
+
+<h2>Total Issues :
+<span id="count">0</span>
+</h2>
+
+<div class="controls">
+
+<input
+type="text"
+id="search"
+placeholder="Search by Location">
+
+<button onclick="searchIssue()">Search</button>
+
+<br><br>
+
+<button onclick="showAll()">All</button>
+
+<button onclick="pending()">Pending</button>
+
+<button onclick="resolved()">Resolved</button>
+
+<button onclick="progress()">In Progress</button>
+
+</div>
+
+<div id="issues"></div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
