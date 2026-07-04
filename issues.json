@@ -1,0 +1,29 @@
+[
+    {
+        "id": 101,
+        "title": "Pothole on NH-24",
+        "category": "Road",
+        "location": "Ghaziabad",
+        "reportedBy": "Rohit Kumar",
+        "status": "Pending",
+        "votes": 18
+    },
+    {
+        "id": 102,
+        "title": "Garbage Overflow",
+        "category": "Sanitation",
+        "location": "Indirapuram",
+        "reportedBy": "Anjali Verma",
+        "status": "In Progress",
+        "votes": 42
+    },
+    {
+        "id": 103,
+        "title": "Broken Street Light",
+        "category": "Electricity",
+        "location": "ABES Road",
+        "reportedBy": "Kiran",
+        "status": "Resolved",
+        "votes": 9
+    }
+]
